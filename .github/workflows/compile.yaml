@@ -22,6 +22,8 @@ jobs:
 
       - run: cd build && pwd
 
+      - run: cd pwd
+
       # - name: Create makefile
       #   run: cmake -G "Unix Makefiles" ..
 

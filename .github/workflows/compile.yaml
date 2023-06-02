@@ -22,5 +22,5 @@ jobs:
         working-directory: ./build
         run: cmake -G "Unix Makefiles" .. && cmake --build .
 
-      - run: cd build && ls
+      - run: cd build && ./my_project
       

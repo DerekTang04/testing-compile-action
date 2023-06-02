@@ -15,8 +15,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Make and move to build folder 
-        run: mkdir build && cd build
+      - name: Make build folder 
+        run: mkdir build
+
+      - name: Move to build folder
+        run: cd build
 
       - run: pwd
 
@@ -26,5 +29,5 @@ jobs:
       # - name: Build project
       #   run: cmake --build .
 
-      - run: ls
+      # - run: ls
       

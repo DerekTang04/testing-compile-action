@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: Install CMake
         run: sudo apt-get -y install cmake
-      - name: Install Unix Makefiles
-        run: sudo apt-get -y install make
+      # - name: Install Unix Makefiles
+      #   run: sudo apt-get -y install make
       
       - run: which cmake
       - run: cmake --version

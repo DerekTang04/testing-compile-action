@@ -18,10 +18,7 @@ jobs:
       - name: Make build folder 
         run: mkdir build
 
-      - name: Move to build folder
-        run: cd build
-
-      - run: pwd
+      - run: pwd && ls
 
       # - name: Create makefile
       #   run: cmake -G "Unix Makefiles" ..

@@ -11,13 +11,9 @@ jobs:
     steps:
       - name: Install CMake
         run: sudo apt-get -y install cmake
-      # - name: Install Unix Makefiles
-      #   run: sudo apt-get -y install make
-      
-      - run: which cmake
-      - run: cmake --version
-      - run: which make
-      - run: make --version
-      - run: which gcc
-      - run: which g++
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - run: pwd
+      - run: ls
       

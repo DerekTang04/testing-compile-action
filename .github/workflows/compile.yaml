@@ -3,6 +3,7 @@ name: Compile Test
 on: 
   pull_request:
     type: [opened, synchronize]
+  workflow_dispatch:
 
 jobs:
   compile:
